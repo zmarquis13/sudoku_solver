@@ -1,0 +1,44 @@
+Tufts CS 131: Artificial Intelligence
+Homework 4: Constraint Satisfaction Problems
+By Zeno Marquis
+3/31/2024
+
+Project:
+Using a constraint satisfaction algorithm to solve 9x9 sukdoku problems
+
+Overview:
+This program implements a constraint satisfaction problem approach to sudoku.
+It uses guided search and chronological backtracking to find a solution. 
+
+Assumptions:
+This program supports one user at a time interacting through the terminal. 
+The program assumes the system has a fair amount of memory and computing
+power in order to search for difficult solutions. Additionally, for custom
+user input, the program assumes the input is well-formed.
+
+Usage:
+Use the command "make" or "make Sudoku" to compile the executable, and 
+"./Sudoku" to run it. No additional command line arguments are needed to
+run the program. The program asks for user input through the command line
+to determine the starting state of the board.
+
+Note on usage:
+For more difficult problems, the program may take an extended amount of
+time. On my system, the given difficult sudoku takes a little under two minutes
+to reach a solution. For some particularly difficult custom user inputs, the
+program may run out of memory in the process of finding a solution.
+
+Files:
+    Individual.hpp - header file for square class
+
+    main.cpp - main file for the program
+
+    Makefile - builds the program
+
+
+Testing:
+A set of test inputs to the program and their associated outputs are available
+in the subdirectory "testfiles"
+
+
+
